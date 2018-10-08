@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     const gameCanvas = document.getElementById("gameCanvas");
-    gameCanvas.width = 500;
-    gameCanvas.height = 700;
     const ctx = gameCanvas.getContext("2d");
     const game = new Game(ctx);
+    gameCanvas.width = game.canvasWidth;
+    gameCanvas.height = game.canvasHeight;
     game.drawBoard();
 });
+
+
 
 class Game {
     constructor(ctx) {
@@ -16,15 +18,14 @@ class Game {
     }
 
     drawBoard() {
-        console.log("I'm here");
-        console.log(this.ctx)
-        this.ctx.beginPath();
-        this.ctx.rect(this.canvasWidth / 3 - 10, 0, this.canvasWidth / 3, this.canvasHeight);
-
         this.ctx.fillStyle = "#ffffff";
+        this.ctx.rect(this.canvasWidth / 3 - 10, 0, 10, this.canvasHeight);
+        this.ctx.rect(this.canvasWidth * 0.66 - 10, 0, 10, this.canvasHeight);
+        this.ctx.rect(0, this.canvasHeight / 3 - 10, this.canvasWidth, 10);
+        this.ctx.rect(0, this.canvasHeight * 0.66 - 10, this.canvasWidth, 10);
         this.ctx.fill();
-        this.ctx.closePath();
     }
 
 
 }
+
