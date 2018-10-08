@@ -6,10 +6,11 @@ class Game {
     this.canvasWidth = 700;
     this.canvasHeight = 500;
     this.ctx = ctx;
-    this.board = new Board();
+    // this.board = new Board();
     }
 
-    drawBoard(board) {
+    drawBoard() {
+        console.log("I'm here")
         this.ctx.beginPath();
         this.ctx.rect(this.canvasWidth / 3 - 10, 0, this.canvasWidth / 3, this.canvasHeight);
         this.ctx.rect(this.canvasWidth * 0.66 - 10, 0, this.canvasWidth * 0.66, this.canvasHeight);
