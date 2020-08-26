@@ -1,0 +1,26 @@
+{
+  "name": "tic-tac-toe",
+  "version": "0.0.1",
+  "description": "jsttt",
+  "main": "game.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Battjmo/JSGAME.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "Nick Battjes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Battjmo/JSGAME/issues"
+  },
+  "homepage": "https://github.com/Battjmo/JSGAME#readme",
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
